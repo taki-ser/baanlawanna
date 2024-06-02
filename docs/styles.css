@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    padding-bottom: 100px; /* フッターの高さ分だけ下部に余白を追加 */
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+} */
+footer {
+    position: fixed; /* フッターをページの下部に固定 */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333; /* フッターの背景色 */
+    color: #fff; /* テキストの色 */
+    text-align: center; /* テキストを中央揃え */
+    padding: 20px 0; /* 上下のパディング */
+}
