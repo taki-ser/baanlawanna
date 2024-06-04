@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -25,6 +24,25 @@
             top: 0;
             width: 100%;
         }
+        /* 電話番号リンクのスタイル */
+        .phone-number {
+            color: black;
+            text-decoration: underline;
+        }
+        /* 定休日テーブルのスタイル */
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .schedule-table th, .schedule-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .schedule-table th {
+            background-color: #f2f2f2;
+        }
     </style>
 </head>
 <body>
@@ -47,29 +65,52 @@
     </header>
     <main>
         <h2>アクセス</h2>
-            <!-- Google マップのコンテナ -->
-            <div class="map-container">
-                <!-- 埋め込み用の Google マップの URL を貼り付け -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.219074147505!2d139.86771548885497!3d35.769994600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601885678e2f6051%3A0x78e2aaa50dd6f85a!2zQmFhbiBMQVdBTk5B77yIIOODkOODvOODs-ODqeODr-ODs-ODiuODvCDvvInph5HnlLrjgr_jgqTlj6TlvI_jg57jg4PjgrXjg7zjgrg!5e0!3m2!1sja!2sjp!4v1717334737213!5m2!1sja!2sjp" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.219074147505!2d139.86771548885497!3d35.769994600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601885678e2f6051%3A0x78e2aaa50dd6f85a!2zQmFhbiBMQVdBTk5B77yIIOODkOODvOODs-ODqeODr-ODs-ODiuODvCDvvInph5HnlLrjgr_jgqTlj6TlvI_jg57jg4PjgrXjg7zjgrg!5e0!3m2!1sja!2sjp!4v1717334737213!5m2!1sja!2sjp" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
         <h3>住所</h3>
-        <p>〒125-0041 東京都葛飾区東金町１丁目４５−９ 城石ビル 2F</p>
+        <p>〒125-0041</p>
+        <p>東京都葛飾区東金町1丁目45-9 城石ビル 2F</p>
         <h3>最寄駅</h3>
         <p>JR金町駅 徒歩2分</p>
         <p>京成金町駅 徒歩3分</p>
         <h2>営業時間</h2>
-        <p>月曜日 定休日</p>
-        <p>火曜日 13:00〜24:00</p>
-        <p>水曜日 13:00〜24:00</p>
-        <p>木曜日 13:00〜24:00</p>
-        <p>金曜日 13:00〜24:00</p>
-        <p>土曜日 13:00〜24:00</p>
-        <p>日曜日 13:00〜24:00</p>
+        <table class="schedule-table">
+            <tr>
+                <th>曜日</th>
+                <th>営業時間</th>
+            </tr>
+            <tr>
+                <td>月</td>
+                <td>定休日</td>
+            </tr>
+            <tr>
+                <td>火</td>
+                <td>13:00〜24:00</td>
+            </tr>
+            <tr>
+                <td>水</td>
+                <td>13:00〜24:00</td>
+            </tr>
+            <tr>
+                <td>木</td>
+                <td>13:00〜24:00</td>
+            </tr>
+            <tr>
+                <td>金</td>
+                <td>13:00〜24:00</td>
+            </tr>
+            <tr>
+                <td>土</td>
+                <td>13:00〜24:00</td>
+            </tr>
+            <tr>
+                <td>日</td>
+                <td>13:00〜24:00</td>
+            </tr>
+        </table>
         <h2>電話番号</h2>
-        <p>03-3600-8471</p>
-
-
-
+        <a class="phone-number" href="tel:03-3600-8471">03-3600-8471</a>
     </main>
     <footer>
         <p>&copy; 2024 Baan Lawanna</p>
