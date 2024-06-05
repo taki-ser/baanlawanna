@@ -1,58 +1,101 @@
-body {
+html, body {
     font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-    background: #333;
+    background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 0.5rem;
+    position: sticky; /* ヘッダーを固定 */
+    top: 0; /* 上部に固定 */
+    width: 100%; /* 全幅に設定 */
+    z-index: 1000; /* 他の要素より前面に表示 */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
     text-align: center;
 }
 
-header nav ul {
+nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+    margin: 0;
 }
 
-header nav ul li {
-    display: inline;
-    margin-right: 10px;
+nav ul li {
+    margin: 0 1rem;
 }
 
-header nav ul li a {
+nav ul li a {
     color: #fff;
     text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
 }
 
 main {
-    padding: 20px 20%;
-    padding-bottom: 100px; /* フッターの高さ分だけ下部に余白を追加 */
+    flex: 1;
+    /* padding: 2rem; */
 }
 
-section {
-    margin-bottom: 20px;
-}
-
-/* footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-} */
 footer {
-    position: fixed; /* フッターをページの下部に固定 */
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
     left: 0;
     bottom: 0;
-    width: 100%;
-    background-color: #333; /* フッターの背景色 */
-    color: #fff; /* テキストの色 */
-    text-align: center; /* テキストを中央揃え */
-    padding: 20px 0; /* 上下のパディング */
+}
+
+/* 画像のスタイル */
+.massage-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* メディアクエリ */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+}
+
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul li a {
+        padding: 0.5rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
 }
