@@ -70,7 +70,7 @@ footer {
 
 
 /* レスポンシブデザイン対応用メディアクエリ */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     header h1 {
         font-size: 2rem;
     }
@@ -89,6 +89,7 @@ footer {
     }
 
     .about_contents .text {
+        /* text-align: center; */
         margin-right: 0;
         margin-bottom: 20px; /* テキストと画像の間のスペース */
     }
@@ -108,6 +109,7 @@ footer {
     }
 
     .about_contents .text {
+        /* text-align: center; */
         margin-right: 0;
         margin-bottom: 30px; /* テキストと画像の間のスペース */
     }
@@ -164,12 +166,12 @@ footer {
 
 /* aboutセクションのスタイル */
 
-.about, .about_owner {
+.about {
     width: 80%;
-    max-width: 800px;
+    max-width: 900px;
     padding: 20px;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
 }
 
 .about_contents {
@@ -179,16 +181,29 @@ footer {
 }
 
 .about_contents .text {
+    text-align: left;
     flex: 1;
     margin-right: 20px; /* テキストと画像の間のスペース */
 }
+.about_contents .images {
+    display: flex;
+     gap: 20px;
+}
 
-.about_contents .image {
+.about_contents .image, .about_contents .face_image{
     flex: 1;
     max-width: 200px; /* 画像の最大幅を指定 */
 }
 
 .about_contents .image img {
+    /* flex: 1; */
     width: 100%;
     height: auto;
+}
+
+.about_contents .face_image img{
+    /* flex: 1; */
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* 丸く切り取る */
 }
