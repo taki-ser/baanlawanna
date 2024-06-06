@@ -1,3 +1,4 @@
+/* 基本的なスタイル */
 html, body {
     font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
     line-height: 1.6;
@@ -13,6 +14,7 @@ body {
     min-height: 100vh;
 }
 
+
 header {
     background-color: #333;
     color: #fff;
@@ -21,6 +23,7 @@ header {
     top: 0; /* 上部に固定 */
     width: 100%; /* 全幅に設定 */
     z-index: 1000; /* 他の要素より前面に表示 */
+    box-sizing: border-box;
 }
 
 header h1 {
@@ -51,6 +54,7 @@ nav ul li a {
 
 main {
     flex: 1;
+    width: 100%;
     /* padding: 2rem; */
 }
 
@@ -63,13 +67,9 @@ footer {
     bottom: 0;
 }
 
-/* 画像のスタイル */
-.massage-image {
-    max-width: 100%;
-    height: auto;
-}
 
-/* メディアクエリ */
+
+/* レスポンシブデザイン対応用メディアクエリ */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2rem;
@@ -83,6 +83,15 @@ footer {
     nav ul li {
         margin: 0.5rem 0;
     }
+
+    .about_contents {
+        flex-direction: column;
+    }
+
+    .about_contents .text {
+        margin-right: 0;
+        margin-bottom: 20px; /* テキストと画像の間のスペース */
+    }
 }
 
 
@@ -94,8 +103,113 @@ footer {
     nav ul li a {
         padding: 0.5rem;
     }
-
-    main {
-        padding: 1rem;
+    .about_contents {
+        flex-direction: column;
     }
+
+    .about_contents .text {
+        margin-right: 0;
+        margin-bottom: 30px; /* テキストと画像の間のスペース */
+    }
+}
+
+/* ヘッダータイトルのスタイル */
+.header-titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ヒーローセクションのスタイル */
+.hero {
+    width: 100%;
+    position: relative;
+    background-image: url('images/mainroom.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* 画像の高さを指定 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; /* テキストの色を白に */
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* 黒い半透明のオーバーレイ */
+    padding: 20px 0;
+    width: 100%;
+}
+
+.overlay h2,
+.overlay p {
+    margin: 10px 0;
+}
+
+/* ボタンのスタイル */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #f39c12; /* ボタンの背景色 */
+    color: white; /* ボタンのテキスト色 */
+    text-decoration: none; /* テキストの下線を削除 */
+    border-radius: 5px; /* ボタンの角を丸くする */
+    transition: background-color 0.3s ease; /* ホバー時の背景色の変化をスムーズに */
+}
+
+.button:hover {
+    background-color: #e67e22; /* ホバー時の背景色 */
+}
+
+/* aboutセクションのスタイル */
+/* .about, .about_owner{
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+.about_content, .about_owner_content {
+    display: flex;
+    flex-direction: column;
+} */
+
+/* .about .image img {
+    flex: 1;
+    width: 30%;
+    max-width: 160px;
+}
+
+.about_owner .image img {
+    flex: 1;
+    width: 30%;
+    max-width: 160px;
+} */
+.about, .about_owner {
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about_contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about_contents .text {
+    flex: 1;
+    margin-right: 20px; /* テキストと画像の間のスペース */
+}
+
+.about_contents .image {
+    flex: 1;
+    max-width: 200px; /* 画像の最大幅を指定 */
+}
+
+.about_contents .image img {
+    width: 100%;
+    height: auto;
 }
