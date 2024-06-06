@@ -151,7 +151,7 @@ footer {
     display: inline-block;
     padding: 10px 20px;
     margin-top: 20px;
-    background-color: #f39c12; /* ボタンの背景色 */
+    background-color: #f39c22; /* ボタンの背景色 */
     color: white; /* ボタンのテキスト色 */
     text-decoration: none; /* テキストの下線を削除 */
     border-radius: 5px; /* ボタンの角を丸くする */
@@ -163,28 +163,7 @@ footer {
 }
 
 /* aboutセクションのスタイル */
-/* .about, .about_owner{
-    width: 80%;
-    padding: 20px;
-    margin: 0 auto;
-    text-align: center;
-}
-.about_content, .about_owner_content {
-    display: flex;
-    flex-direction: column;
-} */
 
-/* .about .image img {
-    flex: 1;
-    width: 30%;
-    max-width: 160px;
-}
-
-.about_owner .image img {
-    flex: 1;
-    width: 30%;
-    max-width: 160px;
-} */
 .about, .about_owner {
     width: 80%;
     max-width: 800px;
