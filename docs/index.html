@@ -9,26 +9,32 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <div class="header-titles">
-            <h1>金町タイ古式マッサージ</h1>
-            <h1>Baan Lawanna</h1>
+    <header class="header">
+        <div class="header_container">
+            <h1>タイ古式マッサージ <nobr>Baan Lawanna</nobr></h1>
+            <button class="header__hamburger hamburger" id="js-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" rel="nofollow">ホーム</a></li>
-                <li><a href="pages/menu.html" rel="nofollow">メニュー</a></li>
-                <li><a href="pages/access.html" rel="nofollow">アクセス</a></li>
-                <!-- <li><a href="pages/staff.html" rel="nofollow">スタッフ紹介</a></li>
-                <li><a href="pages/testimonials.html" rel="nofollow">お客様の声</a></li>
-                <li><a href="pages/booking.html" rel="nofollow">予約</a></li>
-                <li><a href="pages/gallery.html" rel="nofollow">ギャラリー</a></li>
-                <li><a href="pages/news.html" rel="nofollow">お知らせ</a></li>
-                <li><a href="pages/blog.html" rel="nofollow">ブログ</a></li>
-                <li><a href="pages/faq.html" rel="nofollow">FAQ</a></li> -->
+        <!-- モバイル用のバビゲーション -->
+        <nav class="header__nav nav" id="js-nav">
+            <ul class="nav__items nav-items">
+                <li class="nav-items__item"><a href="index.html" rel="nofollow">ホーム</a></li>
+                <li class="nav-items__item"><a href="pages/menu.html" rel="nofollow">メニュー</a></li>
+                <li class="nav-items__item"><a href="pages/access.html" rel="nofollow">アクセス</a></li>
             </ul>
         </nav>
-    </header>
+        <!-- PC用のナビゲーション -->
+        <nav class="header__nav_for_pc">
+            <ul class="nav__items nav-items">
+                <li class="nav-items__item"><a href="index.html" rel="nofollow">ホーム</a></li>
+                <li class="nav-items__item"><a href="pages/menu.html" rel="nofollow">メニュー</a></li>
+                <li class="nav-items__item"><a href="pages/access.html" rel="nofollow">アクセス</a></li>
+            </ul>
+        </nav>
+      </header>
     <main>
         <section class="hero">
             <div class="overlay">
