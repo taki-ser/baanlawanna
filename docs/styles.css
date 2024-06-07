@@ -71,6 +71,9 @@ footer {
 
 /* レスポンシブデザイン対応用メディアクエリ */
 @media (max-width: 1000px) {
+    .header-titles {
+        flex-direction: column !important;
+    }
     header h1 {
         font-size: 2rem;
     }
@@ -97,6 +100,9 @@ footer {
 
 
 @media (max-width: 480px) {
+    .header-titles {
+        flex-direction: column !important;
+    }
     header h1 {
         font-size: 1.5rem;
     }
@@ -118,8 +124,10 @@ footer {
 /* ヘッダータイトルのスタイル */
 .header-titles {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 20px;
 }
 
 /* ヒーローセクションのスタイル */
@@ -127,6 +135,19 @@ footer {
     width: 100%;
     position: relative;
     background-image: url('images/mainroom.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* 画像の高さを指定 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; /* テキストの色を白に */
+}
+.bedroom {
+    width: 100%;
+    position: relative;
+    background-image: url('images/bed.jpg');
     background-size: cover;
     background-position: center;
     height: 500px; /* 画像の高さを指定 */
@@ -199,11 +220,5 @@ footer {
     /* flex: 1; */
     width: 100%;
     height: auto;
-}
-
-.about_contents .face_image img{
-    /* flex: 1; */
-    width: 100%;
-    height: auto;
-    border-radius: 50%; /* 丸く切り取る */
+    border-radius: 50%;
 }
