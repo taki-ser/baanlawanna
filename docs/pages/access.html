@@ -46,26 +46,32 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="header-titles">
-            <h1>金町タイ古式マッサージ</h1>
-            <h1>Baan Lawanna</h1>
+    <header class="header">
+        <div class="header_container">
+            <h1>タイ古式マッサージ <nobr>Baan Lawanna</nobr></h1>
+            <button class="header__hamburger hamburger" id="js-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">ホーム</a></li>
-                <li><a href="menu.html">メニュー</a></li>
-                <li><a href="access.html">アクセス</a></li>
-                <!-- <li><a href="staff.html">スタッフ紹介</a></li>
-                <li><a href="testimonials.html">お客様の声</a></li>
-                <li><a href="booking.html">予約</a></li>
-                <li><a href="gallery.html">ギャラリー</a></li>
-                <li><a href="news.html">お知らせ</a></li>
-                <li><a href="blog.html">ブログ</a></li>
-                <li><a href="faq.html">FAQ</a></li> -->
+        <!-- モバイル用のバビゲーション -->
+        <nav class="header__nav nav" id="js-nav">
+            <ul class="nav__items nav-items">
+                <li class="nav-items__item"><a href="../index.html" rel="nofollow">ホーム</a></li>
+                <li class="nav-items__item"><a href="menu.html" rel="nofollow">メニュー</a></li>
+                <li class="nav-items__item"><a href="access.html" rel="nofollow">アクセス</a></li>
             </ul>
         </nav>
-    </header>
+        <!-- PC用のナビゲーション -->
+        <nav class="header__nav_for_pc">
+            <ul class="nav__items nav-items">
+                <li class="nav-items__item"><a href="../index.html" rel="nofollow">ホーム</a></li>
+                <li class="nav-items__item"><a href="menu.html" rel="nofollow">メニュー</a></li>
+                <li class="nav-items__item"><a href="access.html" rel="nofollow">アクセス</a></li>
+            </ul>
+        </nav>
+      </header>
     <main>
         <section class="about">
             <h2>アクセス</h2>
@@ -120,5 +126,6 @@
     <footer>
         <p>&copy; 2024 Baan Lawanna</p>
     </footer>
+    <script src="../script.js"></script>
 </body>
 </html>
