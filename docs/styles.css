@@ -95,7 +95,9 @@ footer {
     nav ul li {
         margin: 0.5rem 0;
     }
-
+    .about {
+        padding: 0 !important;
+    }
     .about_contents {
         flex-direction: column;
     }
@@ -239,8 +241,9 @@ a.logo-link {
     max-width: 900px;
     padding: 20px;
     margin: 0 auto;
-    text-align: left;
+    text-align: justify;
     position: relative;
+    /* display: flex; */
 }
 
 .about_contents {
@@ -250,7 +253,7 @@ a.logo-link {
 }
 
 .about_contents .text {
-    text-align: left;
+    text-align: justify;
     flex: 1;
     margin-right: 20px; /* テキストと画像の間のスペース */
 }
