@@ -50,7 +50,9 @@ nav ul li a {
     text-decoration: none;
     padding: 0.5rem 1rem;
     display: block;
+    text-align: center;
 }
+
 
 main {
     flex: 1;
@@ -126,7 +128,7 @@ footer {
     .nav__items {
         width: 100%;
         display: flex;
-        align-items: center;
+        align-items: stretch;
         height: initial;
         justify-content: center;
     }
@@ -279,6 +281,8 @@ footer {
     justify-content: center;
     display: none;
 }
+
+
 .header__nav_for_pc {
     position:relative;
     right: 0;
@@ -292,6 +296,14 @@ footer {
     z-index: 999;
     justify-content: center;
     display: flex;
+}
+
+.nav-items__items {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 .header__hamburger {
@@ -309,8 +321,6 @@ footer {
     position: relative;
     right: 0;
 }
-
-
 
 
 .hamburger span {
