@@ -18,12 +18,14 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
     position: sticky; /* ヘッダーを固定 */
     top: 0; /* 上部に固定 */
     width: 100%; /* 全幅に設定 */
-    z-index: 1000; /* 他の要素より前面に表示 */
+    z-index: 98; /* 他の要素より前面に表示 */
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -59,6 +61,7 @@ nav ul li a {
 main {
     flex: 1;
     width: 100%;
+    position: relative;
     /* padding: 2rem; */
 }
 
@@ -80,11 +83,14 @@ footer {
         justify-content: left !important;
     }
     .header_container {
+        padding: 0.5rem;
         justify-content: space-between !important;
+        z-index: 1000;
+        background-color: inherit;
     }
     header h1 {
         font-size: 1.5rem;
-        z-index: 99;
+        z-index: 1001;
     }
 
     nav ul {
@@ -113,21 +119,6 @@ footer {
     .hamburger {
         display: block !important;
     }
-    .header__nav {
-        position: static;
-        transform: initial;
-        background-color: inherit;
-        height: inherit;
-        display: flex !important;
-        /* display: none; */
-        /* visibility: hidden; */
-        opacity: 0;
-        justify-content: end;
-        width: 50%;
-        animation: none;
-        /* overflow: hidden; */
-        /* transform: translateY(-200%) !important; */
-      }
 
     .nav__items {
         width: 100%;
@@ -135,6 +126,7 @@ footer {
         align-items: stretch;
         height: initial;
         justify-content: center;
+        /* position: absolute; */
     }
 }
 
@@ -165,11 +157,10 @@ a.logo-link {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* gap: 20px; */
-    /* justify-content: space-between; */
-
-
 }
+
+
+
 /* ヘッダータイトルのスタイル */
 .header-titles {
     display: flex;
@@ -276,19 +267,27 @@ a.logo-link {
 
 
 /* ハンバーガーメニュー */
+
+.mobile_nav {
+    position: relative;
+    width: 100%;
+    height: 0;
+}
 .header__nav {
-    position:fixed;
+    position: absolute;
     right: 0;
     left: 0;
-    top: initial;
+    top: 0;
     width: 100%;
-    height: auto; /* メニューの高さを画面全体に設定 */
-    transform: translateY(0%); /* 初期状態では画面外に隠す */
+    height: 0;
     background-color: #333;
     transition: ease .4s;
-    z-index: 999;
+    z-index: 99;
     justify-content: center;
-    display: none;
+    /* display: none; */
+    /* visibility: hidden; */
+    overflow: hidden;
+    transform: translateY(-10%);
 }
 
 
@@ -296,13 +295,13 @@ a.logo-link {
     position:relative;
     right: 0;
     left: 0;
-    top: initial;
+    top: inherit;
     width: 100%;
     height: auto; /* メニューの高さを画面全体に設定 */
-    transform: translateY(0%); /* 初期状態では画面外に隠す */
+    /* transform: translateY(0%); */
     background-color: #333;
     transition: ease .4s;
-    z-index: 999;
+    z-index: 99;
     justify-content: center;
     display: flex;
 }
@@ -325,7 +324,7 @@ a.logo-link {
 .hamburger {
     background-color: transparent;
     border-color: transparent;
-    z-index: 9999;
+    z-index: 100;
     display: none;
     position: relative;
     right: 0;
@@ -356,17 +355,8 @@ a.logo-link {
 
 /* ハンバーガーメニュークリック後のスタイル */
 .header__nav.active {
-    visibility: visible;
-    opacity: 1;
-}
-.header__nav.active {
-    animation-name: slideInFromTop;
-    animation-fill-mode: forwards; /* アニメーション終了時の状態を保持 */
-}
-
-.header__nav.hide {
-    animation-name: slideOutToBottom;
-    animation-fill-mode: forwards; /* アニメーション終了時の状態を保持 */
+    height: auto;
+    transform: translateY(0%);
 }
 
 .hamburger.active span:nth-child(1) {
