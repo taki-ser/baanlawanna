@@ -218,7 +218,7 @@ a.logo-link {
     display: inline-block;
     padding: 10px 20px;
     margin-top: 20px;
-    background-color: #f39c; /* ボタンの背景色 */
+    background-color: #f39c22; /* ボタンの背景色 */
     color: white; /* ボタンのテキスト色 */
     text-decoration: none; /* テキストの下線を削除 */
     border-radius: 5px; /* ボタンの角を丸くする */
