@@ -118,7 +118,7 @@ footer {
     }
     .header__nav {
         visibility: visible !important;
-        transition: ease .4s;
+        transition: ease .4s !important;
     }
     .hamburger {
         display: block !important;
