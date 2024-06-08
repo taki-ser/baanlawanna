@@ -116,6 +116,9 @@ footer {
     .header__nav_for_pc {
         display: none !important;
     }
+    .header__nav {
+        visibility: visible;
+    }
     .hamburger {
         display: block !important;
     }
@@ -285,7 +288,7 @@ a.logo-link {
     z-index: 99;
     justify-content: center;
     /* display: none; */
-    /* visibility: hidden; */
+    visibility: hidden;
     overflow: hidden;
     transform: translateY(-100%);
 }
