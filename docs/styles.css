@@ -74,6 +74,11 @@ footer {
     bottom: 0;
 }
 
+footer .sns_link {
+    text-decoration: none;
+    padding: 1rem;
+}
+
 
 
 /* レスポンシブデザイン対応用メディアクエリ */
