@@ -109,6 +109,10 @@ footer .sns_link {
     .about {
         padding: 0 !important;
     }
+    .menu-section {
+        padding: 20px 12px !important;
+        width: 92% !important;
+    }
     .about_contents {
         flex-direction: column;
     }
@@ -381,4 +385,296 @@ transform: rotate(45deg);
 .hamburger.active span:nth-child(3) {
     top: -13px;
     transform: rotate(-45deg);
+}
+
+/* メニューページ */
+.menu-section {
+    padding: 30px 20px;
+}
+
+.menu-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.menu-section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f39c22;
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
+.menu-intro {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.menu-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+    margin-bottom: 24px;
+    position: relative;
+    border-left: 5px solid #f39c22;
+}
+
+.menu-card h3 {
+    margin: 0 0 12px;
+    font-size: 1.35rem;
+    color: #333;
+}
+
+.menu-card p {
+    margin: 0 0 16px;
+    color: #555;
+    line-height: 1.7;
+}
+
+.menu-card--featured {
+    border-left-color: #e67e22;
+    background: linear-gradient(180deg, #fff7ec 0%, #ffffff 100%);
+}
+
+.menu-badge {
+    display: inline-block;
+    background-color: #e67e22;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+    font-size: 1rem;
+}
+
+.price-table thead th {
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    padding: 10px 14px;
+    font-weight: normal;
+    font-size: 0.95rem;
+}
+
+.price-table thead th:last-child {
+    text-align: right;
+}
+
+.price-table tbody td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #eee;
+}
+
+.price-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.price-table tbody td:last-child {
+    text-align: right;
+    font-weight: bold;
+    color: #d35400;
+    white-space: nowrap;
+}
+
+.price-table tbody tr:nth-child(even) td {
+    background-color: #fafafa;
+}
+
+@media (max-width: 480px) {
+    .menu-card {
+        padding: 18px;
+    }
+    .menu-card h3 {
+        font-size: 1.2rem;
+    }
+    .price-table thead th,
+    .price-table tbody td {
+        padding: 10px;
+    }
+}
+
+/* アクセスページ */
+.access-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.access-section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f39c22;
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
+.section-intro {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.info-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 20px 24px;
+    margin-bottom: 20px;
+    border-left: 5px solid #f39c22;
+}
+
+.info-card h3 {
+    margin: 0 0 10px;
+    font-size: 1.15rem;
+    color: #333;
+}
+
+.info-address {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin: 0;
+    color: #333;
+}
+
+.station-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.station-list li {
+    padding: 6px 0;
+    color: #555;
+    line-height: 1.6;
+}
+
+.station-list li::before {
+    content: "🚃 ";
+}
+
+.map-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-top: 45%;
+    margin: 0 auto 24px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.map-container iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/* 営業時間テーブル */
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto 24px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.schedule-table thead th {
+    background-color: #333;
+    color: #fff;
+    padding: 12px 14px;
+    font-weight: normal;
+    font-size: 0.95rem;
+}
+
+.schedule-table tbody td {
+    border-bottom: 1px solid #eee;
+    padding: 12px 14px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.schedule-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.schedule-table tbody tr:nth-child(even) td {
+    background-color: #fafafa;
+}
+
+.schedule-table .closed {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.phone-number {
+    color: #d35400;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: inline-block;
+    padding: 6px 0;
+}
+
+.phone-number:hover {
+    text-decoration: underline;
+}
+
+.phone-note {
+    margin: 6px 0 0;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* ホーム: aboutセクション見出し */
+.about h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 16px;
+    color: #333;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.about h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f39c22;
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
+/* アクセスページ スマホ */
+@media (max-width: 800px) {
+    .access-section .map-container {
+        margin-bottom: 18px;
+    }
+    .schedule-table thead th,
+    .schedule-table tbody td {
+        padding: 10px;
+    }
 }

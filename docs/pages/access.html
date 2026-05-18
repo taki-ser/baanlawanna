@@ -1,48 +1,10 @@
-<!DOCTYPE html>
+<![CDATA[<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, user-scalable=yes viewport-fit=cover">
+    <title>アクセス - Baan Lawanna 〜タイ古式マッサージ〜</title>
     <link rel="stylesheet" href="../styles.css">
-    <style>
-        /* Google マップのコンテナのスタイル */
-        .map-container {
-            overflow: hidden;
-            position: relative;
-            width: 100%;
-            padding-top: 45%; /* 16:9 のアスペクト比 */
-            margin: 0 auto;
-            border: 5px;
-        }
-        /* 埋め込まれた Google マップのスタイル */
-        .map-container iframe {
-            border: 0;
-            height: 100%;
-            left: 0;
-            position: absolute;
-            top: 0;
-            width: 100%;
-        }
-        /* 電話番号リンクのスタイル */
-        .phone-number {
-            color: black;
-            text-decoration: underline;
-        }
-        /* 定休日テーブルのスタイル */
-        .schedule-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 0 auto;
-        }
-        .schedule-table th, .schedule-table td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: center;
-        }
-        .schedule-table th {
-            background-color: #f2f2f2;
-        }
-    </style>
 </head>
 <body>
     <header class="header">
@@ -76,54 +38,72 @@
         </nav>
       </header>
     <main>
-        <section class="about">
+        <section class="about access-section">
             <h2>アクセス</h2>
+            <p class="section-intro">お店へのアクセス方法をご案内します。</p>
+
+            <div class="info-card">
+                <h3>住所</h3>
+                <p class="info-address">〒125-0041<br>東京都葛飾区東金町1丁目45-9 城石ビル 2F</p>
+            </div>
+
+            <div class="info-card">
+                <h3>最寄駅</h3>
+                <ul class="station-list">
+                    <li><strong>JR金町駅</strong> 徒歩2分（北口を出て右へ）</li>
+                    <li><strong>京成金町駅</strong> 徒歩3分（JR金町駅の下を通り右へ）</li>
+                </ul>
+            </div>
+
             <div class="map-container">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.219074147505!2d139.86771548885497!3d35.769994600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601885678e2f6051%3A0x78e2aaa50dd6f85a!2zQmFhbiBMQVdBTk5B77yIIOODkOODvOODs-ODqeODr-ODs-ODiuODvCDvvInph5HnlLrjgr_jgqTlj6TlvI_jg57jg4PjgrXjg7zjgrg!5e0!3m2!1sja!2sjp!4v1717334737213!5m2!1sja!2sjp" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <h3>住所</h3>
-            <p>〒125-0041</p>
-            <p>東京都葛飾区東金町1丁目45-9 城石ビル 2F</p>
-            <h3>最寄駅</h3>
-            <p>JR金町駅 徒歩2分 北口を出て右へ</p>
-            <p>京成金町駅 徒歩3分 JR金町駅の下を通り右へ</p>
+
             <h2>営業時間</h2>
             <table class="schedule-table">
-                <tr>
-                    <th>曜日</th>
-                    <th>営業時間</th>
-                </tr>
-                <tr>
-                    <td>月</td>
-                    <td>定休日</td>
-                </tr>
-                <tr>
-                    <td>火</td>
-                    <td>13:00〜24:00</td>
-                </tr>
-                <tr>
-                    <td>水</td>
-                    <td>13:00〜24:00</td>
-                </tr>
-                <tr>
-                    <td>木</td>
-                    <td>13:00〜24:00</td>
-                </tr>
-                <tr>
-                    <td>金</td>
-                    <td>13:00〜24:00</td>
-                </tr>
-                <tr>
-                    <td>土</td>
-                    <td>13:00〜24:00</td>
-                </tr>
-                <tr>
-                    <td>日</td>
-                    <td>13:00〜24:00</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>曜日</th>
+                        <th>営業時間</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>月</td>
+                        <td class="closed">定休日</td>
+                    </tr>
+                    <tr>
+                        <td>火</td>
+                        <td>13:00〜24:00</td>
+                    </tr>
+                    <tr>
+                        <td>水</td>
+                        <td>13:00〜24:00</td>
+                    </tr>
+                    <tr>
+                        <td>木</td>
+                        <td>13:00〜24:00</td>
+                    </tr>
+                    <tr>
+                        <td>金</td>
+                        <td>13:00〜24:00</td>
+                    </tr>
+                    <tr>
+                        <td>土</td>
+                        <td>13:00〜24:00</td>
+                    </tr>
+                    <tr>
+                        <td>日</td>
+                        <td>13:00〜24:00</td>
+                    </tr>
+                </tbody>
             </table>
-            <h2>電話番号</h2>
-            <a class="phone-number" href="tel:03-3600-8471">03-3600-8471</a>
+
+            <div class="info-card">
+                <h3>電話番号</h3>
+                <a class="phone-number" href="tel:03-3600-8471">03-3600-8471</a>
+                <p class="phone-note">お気軽にお電話ください</p>
+            </div>
         </section>
     </main>
     <footer>
@@ -134,7 +114,7 @@
             <img src="../images/LINE_Brand_icon.png" alt="Line" width="40" height="40">
         </a>
         <a class="sns_link" href="https://m.facebook.com/kao.lawanna/" target="_blank">
-            <img src="../images/Facebook_Logo_Primary.png" alt="FaceBook" width="40" height="40">
+            <img src="../images/FaceBook_Logo_Primary.png" alt="FaceBook" width="40" height="40">
         </a>
         <a class="sns_link" href="https://www.tiktok.com/@kaoru2513" target="_blank">
             <img src="../images/TikTok-logo-RGB-Stacked-white-simplified.png" alt="TikTok" width="40" height="40">
@@ -143,4 +123,4 @@
     </footer>
     <script src="../script.js"></script>
 </body>
-</html>
+</html>]]>
